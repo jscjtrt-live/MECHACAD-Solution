@@ -1,4 +1,6 @@
+import React from "react";
 import { useState } from 'react';
+
 
 const MODELING_IMG = 'https://pixabay.com/get/gd1f588aa0c252fe9fd06b76c06ece52d352be10c79878113293f8f328064ca6c0a798ad87f3aadcc4b6cb9f200d9322a74a7097a31c1b3487c8db21b8911e407_1280.jpg';
 const PRINTING_IMG = 'https://pixabay.com/get/g106fbb11dd88de571e625933af6fb86a96c45d6249514d47df2053ee46ea77f17f4f45e96b8f46e506388d5f3e75b4dc2dc8187744a52198c3a3eb8bb616cb9a_1280.jpg';

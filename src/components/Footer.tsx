@@ -1,11 +1,12 @@
-import logo from '../assets/mechacad-logo.png';
+import React from "react";
+import logo from "../assets/mechacad-logo.png";
 
-const PHONE_NUM = '075 613 3530';
+const PHONE_NUM = "075 613 3530";
 
 export default function Footer() {
   const handleScroll = (href: string) => {
     const target = document.querySelector(href);
-    if (target) target.scrollIntoView({ behavior: 'smooth' });
+    if (target) target.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -20,12 +21,12 @@ export default function Footer() {
                 src={logo}
                 alt="MechaCAD Solutions"
                 className="h-12 w-auto object-contain"
-                style={{ filter: 'brightness(0) invert(1)' }}
+                style={{ filter: "brightness(0) invert(1)" }}
               />
             </div>
             <p className="text-silver-500 text-sm leading-relaxed max-w-sm mb-6">
-              Sri Lanka's leading engineering and digital manufacturing firm — 
-              turning your concepts into functional reality with precision, 
+              Sri Lanka's leading engineering and digital manufacturing firm —
+              turning your concepts into functional reality with precision,
               reliability, and perfect finish.
             </p>
             {/* Contact quick ref */}
@@ -47,21 +48,23 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Services</h4>
+            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
+              Services
+            </h4>
             <ul className="space-y-2.5">
               {[
-                'Character Modeling',
-                'Engineering CAD',
-                'FDM 3D Printing',
-                'Resin Printing',
-                'Metal Laser Cutting',
-                'Acrylic Cutting',
-                'Laser Engraving',
-                'PLC Automation',
+                "Character Modeling",
+                "Engineering CAD",
+                "FDM 3D Printing",
+                "Resin Printing",
+                "Metal Laser Cutting",
+                "Acrylic Cutting",
+                "Laser Engraving",
+                "PLC Automation",
               ].map((item) => (
                 <li key={item}>
                   <button
-                    onClick={() => handleScroll('#services')}
+                    onClick={() => handleScroll("#services")}
                     className="text-silver-500 hover:text-brand-400 text-sm transition-colors duration-200 flex items-center gap-2"
                   >
                     <span className="w-1 h-1 bg-brand-500 rounded-full" />
@@ -74,15 +77,17 @@ export default function Footer() {
 
           {/* Navigation */}
           <div>
-            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Navigation</h4>
+            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
+              Navigation
+            </h4>
             <ul className="space-y-2.5">
               {[
-                { label: 'Home', href: '#home' },
-                { label: 'About Us', href: '#about' },
-                { label: 'Our Services', href: '#services' },
-                { label: 'Portfolio', href: '#portfolio' },
-                { label: 'Client Reviews', href: '#reviews' },
-                { label: 'Contact', href: '#contact' },
+                { label: "Home", href: "#home" },
+                { label: "About Us", href: "#about" },
+                { label: "Our Services", href: "#services" },
+                { label: "Portfolio", href: "#portfolio" },
+                { label: "Client Reviews", href: "#reviews" },
+                { label: "Contact", href: "#contact" },
               ].map((item) => (
                 <li key={item.href}>
                   <button
@@ -97,10 +102,17 @@ export default function Footer() {
 
             {/* Materials badge */}
             <div className="mt-6 p-4 bg-carbon-800/60 border border-carbon-700/40 rounded-lg">
-              <div className="text-silver-500 text-xs font-mono uppercase tracking-wider mb-2">Materials</div>
+              <div className="text-silver-500 text-xs font-mono uppercase tracking-wider mb-2">
+                Materials
+              </div>
               <div className="flex flex-wrap gap-1.5">
-                {['PLA+', 'PETG', 'CF', 'TPU', 'SS', 'MS', 'AL'].map(m => (
-                  <span key={m} className="px-2 py-0.5 bg-carbon-700 text-brand-400 text-xs rounded font-mono border border-brand-700/20">{m}</span>
+                {["PLA+", "PETG", "CF", "TPU", "SS", "MS", "AL"].map((m) => (
+                  <span
+                    key={m}
+                    className="px-2 py-0.5 bg-carbon-700 text-brand-400 text-xs rounded font-mono border border-brand-700/20"
+                  >
+                    {m}
+                  </span>
                 ))}
               </div>
             </div>
@@ -113,10 +125,13 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
             <div className="text-silver-600 text-sm text-center sm:text-left">
-              © 2024 MechaCAD Solutions. All rights reserved. · Precision Engineering · Sri Lanka
+              © 2024 MechaCAD Solutions. All rights reserved. · Precision
+              Engineering · Sri Lanka
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-silver-600 text-xs font-mono">Concept to Reality</span>
+              <span className="text-silver-600 text-xs font-mono">
+                Concept to Reality
+              </span>
               <div className="w-1.5 h-1.5 bg-brand-500 rounded-full animate-pulse" />
             </div>
           </div>
