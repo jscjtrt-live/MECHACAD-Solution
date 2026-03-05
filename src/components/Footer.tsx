@@ -21,7 +21,7 @@ export default function Footer() {
                 src={logo}
                 alt="MechaCAD Solutions"
                 className="h-12 w-auto object-contain"
-                style={{ filter: "brightness(0) invert(1)" }}
+                //style={{ filter: "brightness(0) invert(1)" }}
               />
             </div>
             <p className="text-silver-500 text-sm leading-relaxed max-w-sm mb-6">
