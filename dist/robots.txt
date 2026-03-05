@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jscjtrt-live.github.io/MECHACAD-Solution/sitemap.xml
