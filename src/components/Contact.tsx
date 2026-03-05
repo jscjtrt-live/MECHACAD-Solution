@@ -1,8 +1,17 @@
 import React from "react";
 import { useState, type ChangeEvent, type FormEvent } from "react";
+// import { Resend } from 'resend';
 
+// const resend = new Resend('re_xxxxxxxxx');
 const WHATSAPP_NUM = "0756133530";
 const PHONE_NUM = "075 613 3530";
+
+// const { data, error } = await resend.contacts.create({
+//   email: 'steve.wozniak@gmail.com',
+//   firstName: 'Steve',
+//   lastName: 'Wozniak',
+//   unsubscribed: false,
+// });
 
 const SERVICES_LIST = [
   "3D Modeling - Character/Figurine",
